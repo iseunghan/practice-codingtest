@@ -8,9 +8,14 @@ public class Main {
         int result = hIndexSolution.run(citations);
         System.out.println("result = " + result);*/
 
-        int[] numbers = {3, 30, 34, 5, 9};
+        /*int[] numbers = {3, 30, 34, 5, 9};
         Max_number max_number = new Max_number();
         String result = max_number.run(numbers);
+        System.out.println("result = " + result);*/
+
+        String[][] clothes = {{"crow_mask", "face"},{"blue_sunglasses", "face"}, {"smoky_makeup", "face"}};
+        Spy_Clothes spyClothes = new Spy_Clothes();
+        int result = spyClothes.run(clothes);
         System.out.println("result = " + result);
 
     }
