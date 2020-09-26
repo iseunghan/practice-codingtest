@@ -13,10 +13,20 @@ public class Main {
         String result = max_number.run(numbers);
         System.out.println("result = " + result);*/
 
-        String[][] clothes = {{"crow_mask", "face"},{"blue_sunglasses", "face"}, {"smoky_makeup", "face"}};
+        /*String[][] clothes = {{"crow_mask", "face"},{"blue_sunglasses", "face"}, {"smoky_makeup", "face"}};
         Spy_Clothes spyClothes = new Spy_Clothes();
         int result = spyClothes.run(clothes);
-        System.out.println("result = " + result);
+        System.out.println("result = " + result);*/
 
+        /*int[] numbers = {1, 1, 1, 1, 1};
+        int target = 3;
+        Target_Number target_number = new Target_Number();
+        int result = target_number.run(numbers, target);
+        System.out.println("result = " + result);*/
+
+        String numbers = "011";
+        Find_Demical find = new Find_Demical();
+        int result = find.run(numbers);
+        System.out.println("result = " + result);
     }
 }
