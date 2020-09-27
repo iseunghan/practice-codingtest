@@ -30,7 +30,7 @@ public class Main {
         System.out.println("result = " + result);*/
 
         Stock_Price st = new Stock_Price();
-        int[] prices = {5, 4, 3, 2, 1};
+        int[] prices = {2,3,1,2,3,1};
         int[] solution = st.solution(prices);
         for (int i : solution) {
             System.out.println("i = " + i);

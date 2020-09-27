@@ -1,9 +1,9 @@
 package me.iseunghan;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 /**
  * 문제 설명
@@ -25,57 +25,44 @@ import java.util.Queue;
 public class Stock_Price {
     public int[] solution(int[] prices) {
         //prices : [1,2,3,2,3] , return : [4,3,1,1,0]
-        int priceSize = prices.length;
-        Queue<Integer> price_qu = new LinkedList<>();
-        ArrayList<Integer> price_list = new ArrayList<>();
+        int[] answer = new int[prices.length];
+        Stack<Integer> stack = new Stack<>();
+        Stack<Integer> save = new Stack<>();
+        int index = 0;
+        int time = 0;
 
-        //qu에 저장..
-        for(int i=0; i<priceSize; i++){
-            price_qu.add(prices[i]);
+        //init
+        for (int i = 0; i < prices.length; i++) {
+            stack.push(prices[prices.length-i-1]);
         }
 
-        //while문 변수들
-        int idx = 0;
-        int up = 0;
-        int time = 0;
-        int flag = 0;
-        //qu.isEmpty 일때 까지.
-        while (!price_qu.isEmpty()) {
-            //초기 실행
-            if (flag == 0) {
-                flag = 1;
-                price_list.add(time);
-            } else {
-                int max = price_qu.poll();
-                up++;
-                for (int i = up; i < priceSize; i++) {
-                    if (max > prices[i]) {
-                        price_list.set(idx, ++time);
-                        time = 0;
-                        idx++;
-                        price_list.add(time);
-                        break;
-                    } else {//max <= prices[i]
-                        price_list.set(idx, ++time);
-                        if (i == priceSize - 1) {
-                            idx++;
-                            time = 0;
-                            price_list.add(time);
-                        }
-                    }
+        while (!stack.isEmpty()) {
+            int findOne = stack.pop();
+
+            for (int i = index; i < prices.length-1; i++) {
+                if(stack.isEmpty()){
+                    break;
+                }
+                int findTwo = stack.pop();
+                save.push(findTwo); // 다시 save에 넣어준다.
+                if (findOne <= findTwo) { // 주식 증가 했을 때!
+                    time++;
+                }else{  // 주식이 떨어 졌을 때!
+                    time++;
+                    break;
                 }
             }
+
+            int size = save.size();
+            //다시 pop & push
+            for (int i = 0; i < size; i++) {
+                stack.push(save.pop());
+            }
+
+            answer[index] = time;
+            time = 0;
+            index++;
         }
-
-
-
-        int listSize = price_list.size();
-        int[] answer = new int[listSize];
-        for(int i=0; i<listSize; i++){
-            answer[i] = price_list.get(i);
-        }
-
-
         return answer;
     }
 }
