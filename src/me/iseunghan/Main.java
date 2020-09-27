@@ -24,9 +24,16 @@ public class Main {
         int result = target_number.run(numbers, target);
         System.out.println("result = " + result);*/
 
-        String numbers = "011";
+        /*String numbers = "011";
         Find_Demical find = new Find_Demical();
         int result = find.run(numbers);
-        System.out.println("result = " + result);
+        System.out.println("result = " + result);*/
+
+        Stock_Price st = new Stock_Price();
+        int[] prices = {5, 4, 3, 2, 1};
+        int[] solution = st.solution(prices);
+        for (int i : solution) {
+            System.out.println("i = " + i);
+        }
     }
 }
