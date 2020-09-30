@@ -29,11 +29,10 @@ public class Main {
         int result = find.run(numbers);
         System.out.println("result = " + result);*/
 
-        Stock_Price st = new Stock_Price();
-        int[] prices = {2,3,1,2,3,1};
-        int[] solution = st.solution(prices);
-        for (int i : solution) {
-            System.out.println("i = " + i);
-        }
+        H_index hindex = new H_index();
+        int[] citations = {3, 0, 5, 6, 1};
+        int run = hindex.run(citations);
+        System.out.println("run = " + run);
+
     }
 }
