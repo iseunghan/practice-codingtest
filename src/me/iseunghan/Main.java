@@ -24,15 +24,21 @@ public class Main {
         int result = target_number.run(numbers, target);
         System.out.println("result = " + result);*/
 
-        String numbers = "17";
+        /*String numbers = "17";
         Find_Demical find = new Find_Demical();
         int result = find.run(numbers);
-        System.out.println("result = " + result);
+        System.out.println("result = " + result);*/
 
         /*H_index hindex = new H_index();
         int[] citations = {3, 0, 5, 6, 1};
         int run = hindex.run(citations);
         System.out.println("run = " + run);*/
+        Carpet carpet = new Carpet();
+        int[] solution = carpet.solution(8, 16);
+        for (int i : solution) {
+            System.out.println("i = " + i);
+        }
+
 
     }
 }
