@@ -33,12 +33,16 @@ public class Main {
         int[] citations = {3, 0, 5, 6, 1};
         int run = hindex.run(citations);
         System.out.println("run = " + run);*/
-        Carpet carpet = new Carpet();
+
+
+        /*Carpet carpet = new Carpet();
         int[] solution = carpet.solution(8, 16);
         for (int i : solution) {
             System.out.println("i = " + i);
-        }
+        }*/
 
 
+        Normal_BackPack t = new Normal_BackPack();
+        t.run();
     }
 }
