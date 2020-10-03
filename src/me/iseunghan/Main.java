@@ -42,7 +42,14 @@ public class Main {
         }*/
 
 
-        Normal_BackPack t = new Normal_BackPack();
-        t.run();
+        /*Normal_BackPack t = new Normal_BackPack();
+        t.run();*/
+
+        Fibonacci f = new Fibonacci();
+        f.run();
+
+
+
+
     }
 }
