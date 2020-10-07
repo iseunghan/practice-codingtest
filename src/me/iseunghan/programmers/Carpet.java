@@ -1,4 +1,4 @@
-package me.iseunghan;
+package me.iseunghan.programmers;
 
 public class Carpet {
     public int[] solution(int yellow, int brown) {

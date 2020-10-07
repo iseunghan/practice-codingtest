@@ -1,4 +1,4 @@
-package me.iseunghan;
+package me.iseunghan.programmers;
 
 import java.util.*;
 

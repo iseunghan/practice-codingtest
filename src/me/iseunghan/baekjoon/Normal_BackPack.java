@@ -1,4 +1,4 @@
-package me.iseunghan;
+package me.iseunghan.baekjoon;
 
 import java.util.Arrays;
 import java.util.Comparator;

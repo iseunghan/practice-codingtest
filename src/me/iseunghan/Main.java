@@ -1,5 +1,7 @@
 package me.iseunghan;
 
+import me.iseunghan.baekjoon.Fibonacci;
+
 public class Main {
 
     public static void main(String[] args) {
