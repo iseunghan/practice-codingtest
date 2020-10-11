@@ -30,7 +30,7 @@ public class Coding_Test4 {
             System.out.println(stringIntegerEntry);
         }
         int MAX = collect.get(0).getValue() + collect.get(1).getValue();
-        while(MAX > 1)
+        //while(MAX > 1)
 
         return answer;
     }
