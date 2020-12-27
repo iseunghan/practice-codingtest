@@ -1,4 +1,4 @@
-package me.iseunghan.baekjoon;
+package me.iseunghan.baekjoon.정렬;
 
 import java.util.Arrays;
 import java.util.Scanner;

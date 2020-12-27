@@ -1,11 +1,11 @@
-package me.iseunghan.baekjoon;
+package me.iseunghan.baekjoon.정렬;
 
 import java.io.*;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-public class Sort_11650 {
+public class BOJ_11651 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
@@ -25,16 +25,16 @@ public class Sort_11650 {
         Arrays.sort(dots, new Comparator<Dot>() {
             @Override
             public int compare(Dot o1, Dot o2) {
-                if (o1.getX() == o2.getX()) {
-                    return Integer.compare(o1.getY(), o2.getY());
+                if (o1.getY() == o2.getY()) {
+                    return Integer.compare(o1.getX(), o2.getX());
                 }
-                return Integer.compare(o1.getX(), o2.getX());
+                return Integer.compare(o1.getY(), o2.getY());
             }
         });
 
         for (int i = 0; i < dots.length; i++) {
             Dot dot = dots[i];
-            bw.write(dot.getX() +  " " + dot.getY() + "\n");
+            bw.write(dot.getX() + " " + dot.getY() + "\n");
         }
         bw.flush();
         bw.close();
