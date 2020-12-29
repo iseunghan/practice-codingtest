@@ -1,4 +1,4 @@
-package me.iseunghan.baekjoon;
+package me.iseunghan.baekjoon.백트래킹;
 
 import com.sun.org.apache.bcel.internal.generic.BREAKPOINT;
 

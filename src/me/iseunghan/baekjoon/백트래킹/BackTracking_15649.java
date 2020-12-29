@@ -1,15 +1,14 @@
-package me.iseunghan.baekjoon;
+package me.iseunghan.baekjoon.백트래킹;
 
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class N_M_1 {
+public class BackTracking_15649 {
     static int N, M;
     static int[] arr;
     static boolean[] isUsed;
     static BufferedWriter bw;
-
-    public static void main(String[] args) throws IOException, IOException {
+    public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st = new StringTokenizer(bf.readLine());
@@ -17,8 +16,8 @@ public class N_M_1 {
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
 
-        arr = new int[M + 1];
-        isUsed = new boolean[N + 1];
+        arr = new int[M+1];
+        isUsed = new boolean[N+1];
 
         recursion(0);
 
@@ -34,7 +33,7 @@ public class N_M_1 {
                 // ex) isUsed[arr[i]] = false; ? 어떻게 될까?? X
             }
             bw.write("\n");
-            return;
+            return ;
         }
 
         for (int i = 1; i <= N; i++) { // [1, ] [2, ] [3, ] 이런식으로 호출하게끔
