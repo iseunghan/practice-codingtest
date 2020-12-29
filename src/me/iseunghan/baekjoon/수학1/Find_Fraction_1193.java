@@ -1,4 +1,4 @@
-package me.iseunghan.baekjoon;
+package me.iseunghan.baekjoon.수학1;
 
 import java.io.BufferedReader;
 import java.io.IOException;

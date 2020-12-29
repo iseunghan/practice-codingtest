@@ -1,9 +1,9 @@
-package me.iseunghan.baekjoon;
+package me.iseunghan.baekjoon.수학1;
 
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Snail_Wanna_Go {
+public class Snail_Wanna_Go_2869 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
