@@ -1,4 +1,4 @@
-package me.iseunghan.baekjoon;
+package me.iseunghan.baekjoon.브루트포스;
 
 import java.io.*;
 import java.util.StringTokenizer;
