@@ -1,4 +1,4 @@
-package me.iseunghan.baekjoon;
+package me.iseunghan.baekjoon.수학2;
 
 import java.io.*;
 import java.util.Arrays;

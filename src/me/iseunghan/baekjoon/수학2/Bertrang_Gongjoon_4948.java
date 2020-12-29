@@ -1,35 +1,38 @@
-package me.iseunghan.baekjoon;
+package me.iseunghan.baekjoon.수학2;
 
 import java.io.*;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class Demical_1929 {
-    static int[] demical;
+public class Bertrang_Gongjoon_4948 {
+    static int[] demical = new int[246913];
 
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        StringTokenizer st = new StringTokenizer(bf.readLine());
 
-        int M = Integer.parseInt(st.nextToken());
-        int N = Integer.parseInt(st.nextToken());
-
-        demical = new int[N + 1];
         demical[0] = -1;
         demical[1] = -1;
+        int max = (int) Math.sqrt(246912);
         for (long i = 2; i < demical.length; i++) {
-            if (i <= 1000 && demical[(int) i] == 0) {
+            if (i <= max && demical[(int) i] == 0) {
                 for (long j = i * i; j < demical.length; j += i) {
                     demical[(int) j] = -1;
                 }
             }
         }
 
-        for (int i = M; i <= N; i++) {
-            if (demical[i] == 0) {
-                bw.write(i + "\n");
+        while (true) {
+            int count = 0;
+            int N = Integer.parseInt(bf.readLine());
+            if (N == 0) {
+                break;
             }
+            for (int i = N+1; i <= 2 * N; i++) {
+                if (demical[i] == 0) {
+                    count++;
+                }
+            }
+            bw.write(count + "\n");
         }
         bw.flush();
         bw.close();
