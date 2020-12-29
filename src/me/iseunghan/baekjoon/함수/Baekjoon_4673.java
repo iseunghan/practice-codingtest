@@ -1,4 +1,4 @@
-package me.iseunghan.baekjoon;
+package me.iseunghan.baekjoon.함수;
 
 public class Baekjoon_4673 {
     static int[] arr = new int[10001];

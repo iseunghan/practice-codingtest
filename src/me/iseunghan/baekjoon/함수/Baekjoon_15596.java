@@ -1,4 +1,4 @@
-package me.iseunghan.baekjoon;
+package me.iseunghan.baekjoon.함수;
 
 public class Baekjoon_15596{
     public long sum(int[] a) {
