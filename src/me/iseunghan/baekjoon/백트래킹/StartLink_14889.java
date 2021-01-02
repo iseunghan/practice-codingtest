@@ -28,6 +28,7 @@ public class StartLink_14889 {
                 status[i][j] = Integer.parseInt(st.nextToken());
             }
         }
+
         dfs(0);
         System.out.println(MIN);
     }
@@ -46,7 +47,7 @@ public class StartLink_14889 {
                     team_Link[idx++] = i;
                 }
             }
-            check_team_stat(team_star, team_Link);
+            check_team_stat();
             return;
         }
 
@@ -62,17 +63,17 @@ public class StartLink_14889 {
         }
     }
 
-    private static void check_team_stat(int[] team_Star, int[] team_link) {
+    private static void check_team_stat() {
         int result1 = 0;
         int result2 = 0;
 
-        for (int i : team_Star) {
-            for (int j : team_Star) {
+        for (int i : team_star) {
+            for (int j : team_star) {
                 result1 += status[i][j];
             }
         }
-        for (int i : team_link) {
-            for (int j : team_link) {
+        for (int i : team_Link) {
+            for (int j : team_Link) {
                 result2 += status[i][j];
             }
         }
