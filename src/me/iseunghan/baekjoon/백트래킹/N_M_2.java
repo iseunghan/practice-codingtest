@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class BackTracking_15650 {
+public class N_M_2 {
     static BufferedWriter bw;
     static int N, M;
     static int[] arr;

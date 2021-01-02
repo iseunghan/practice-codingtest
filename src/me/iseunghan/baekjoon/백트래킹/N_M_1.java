@@ -3,7 +3,7 @@ package me.iseunghan.baekjoon.백트래킹;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class BackTracking_15649 {
+public class N_M_1 {
     static int N, M;
     static int[] arr;
     static boolean[] isUsed;
