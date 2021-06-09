@@ -6,7 +6,7 @@ import java.util.StringTokenizer;
 /**
  * 10828번 스택
  */
-public class Stack {
+public class BOJ_10828 {
     static java.util.Stack<Integer> st = new java.util.Stack<Integer>();
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
