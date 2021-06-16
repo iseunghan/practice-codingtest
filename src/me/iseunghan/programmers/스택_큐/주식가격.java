@@ -1,8 +1,5 @@
-package me.iseunghan.programmers;
+package me.iseunghan.programmers.스택_큐;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -22,7 +19,7 @@ import java.util.Stack;
  * 4초 시점의 ₩2은 1초간 가격이 떨어지지 않았습니다.
  * 5초 시점의 ₩3은 0초간 가격이 떨어지지 않았습니다.
  */
-public class Stock_Price {
+public class 주식가격 {
     public int[] solution(int[] prices) {
         //prices : [1,2,3,2,3] , return : [4,3,1,1,0]
         int[] answer = new int[prices.length];
