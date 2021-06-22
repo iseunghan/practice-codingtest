@@ -1,4 +1,4 @@
-package me.iseunghan.programmers.스택_큐;
+package me.iseunghan.programmers.고득점Kit.스택_큐;
 
 import java.util.LinkedList;
 import java.util.Queue;

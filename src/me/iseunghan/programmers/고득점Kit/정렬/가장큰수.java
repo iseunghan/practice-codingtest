@@ -1,4 +1,4 @@
-package me.iseunghan.programmers.정렬;
+package me.iseunghan.programmers.고득점Kit.정렬;
 
 import java.util.Arrays;
 import java.util.Comparator;
