@@ -3,7 +3,6 @@ package me.iseunghan.baekjoon.BFS_DFS;
 import java.util.*;
 import java.io.*;
 
-// 팀에 속한다 ->  +1 , 속하지 못한다 -> -1 , 혼자인 팀이다 -> -5
 public class 텀프로젝트_9466 {
     static int[] arr;
     static boolean[] visit, done;
@@ -16,6 +15,8 @@ public class 텀프로젝트_9466 {
         int T = Integer.parseInt(bf.readLine());
 
         StringTokenizer st;
+
+        // 테스트 케이스 개수만큼 반복!
         for (int p = 0; p < T; p++) {
             int n = Integer.parseInt(bf.readLine());
             arr = new int[n + 1];
@@ -34,6 +35,7 @@ public class 텀프로젝트_9466 {
                     dfs(i);
                 }
             }
+            // count는 팀원이 된 학생들의 수이므로, 정답은 (전체 학생 - count) 이다.
             bw.write((n - count) + "\n");
         }
         bw.flush();
