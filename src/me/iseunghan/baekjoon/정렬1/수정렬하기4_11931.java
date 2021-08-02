@@ -1,4 +1,4 @@
-package me.iseunghan.baekjoon.정렬;
+package me.iseunghan.baekjoon.정렬1;
 
 import java.io.*;
 
