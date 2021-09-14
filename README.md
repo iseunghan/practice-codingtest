@@ -13,9 +13,10 @@
 - [재귀](https://github.com/iseunghan/practice-codingtest/tree/master/src/me/iseunghan/baekjoon/%EC%9E%AC%EA%B7%80) 
 - [브루트 포스](https://github.com/iseunghan/practice-codingtest/tree/master/src/me/iseunghan/baekjoon/%EB%B8%8C%EB%A3%A8%ED%8A%B8%ED%8F%AC%EC%8A%A4) 
 - [정렬 1](https://github.com/iseunghan/practice-codingtest/tree/master/src/me/iseunghan/baekjoon/%EC%A0%95%EB%A0%AC1)
-- 정렬 2
+- [정렬 2](https://github.com/iseunghan/practice-codingtest/tree/master/src/me/iseunghan/baekjoon/%EC%A0%95%EB%A0%AC2)
 - [백트래킹](https://github.com/iseunghan/practice-codingtest/tree/master/src/me/iseunghan/baekjoon/%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9) 
-- 동적 계획법 (추가 예정)
+- [다이나믹 프로그래밍](https://github.com/iseunghan/practice-codingtest/tree/master/src/me/iseunghan/baekjoon/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
+- [시뮬레이션](https://github.com/iseunghan/practice-codingtest/tree/master/src/me/iseunghan/baekjoon/%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98)
 - [이분 탐색](https://github.com/iseunghan/practice-codingtest/tree/master/src/me/iseunghan/baekjoon/%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89)
 
 ## [프로그래머스 코딩테스트 연습](https://programmers.co.kr/learn/challenges)
